@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taugei Flower Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/8784a9c5d4.js" crossorigin="anonymous"></script>
+  <style>
+    body { font-family: 'Montserrat', Arial, sans-serif; }
+    .noto-serif { font-family: 'Noto Serif', serif; }
+    .inter { font-family: 'Inter', Arial, sans-serif; }
+  </style>
+</head>
+<body class="bg-[#f7f8fa] text-[#222]">
+  <header class="bg-[#f7f8fa]">
+    <nav class="max-w-[1200px] mx-auto flex items-center justify-between px-8 pt-8 pb-4">
+      <div class="flex items-center">
+        <img src="assets/logo.png" alt="Taugei Logo" class="h-16 w-auto select-none">
+      </div>
+      <div class="flex items-center gap-2 md:gap-8">
+        <ul class="hidden md:flex gap-8 font-medium text-lg items-center">
+          <li><a href="#" class="font-bold text-[#252432]">Home</a></li>
+          <li><a href="#" class="font-normal text-[#8987A1]">Shop</a></li>
+          <li><a href="#" class="font-normal text-[#8987A1]">About us</a></li>
+        </ul>
+        <div class="flex items-center gap-2 ml-4">
+          <i class="fa-solid fa-cart-shopping text-xl"></i>
+          <span class="font-medium text-lg">Cart ($56)</span>
+        </div>
+      </div>
+      <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center ml-4 w-8 h-8">
+        <span class="sr-only">Open menu</span>
+        <span class="block w-6 h-0.5 bg-[#e76f51] mb-1"></span>
+        <span class="block w-6 h-0.5 bg-[#e76f51] mb-1"></span>
+        <span class="block w-6 h-0.5 bg-[#e76f51]"></span>
+      </button>
+      <ul id="mobile-menu" class="absolute top-full right-4 bg-white rounded-lg shadow-md flex-col gap-0 font-medium text-base w-36 py-2 z-20 hidden md:hidden">
+        <li><a href="#" class="block px-4 py-2 font-bold text-[#222]">Home</a></li>
+        <li><a href="#" class="block px-4 py-2 text-[#b0b3bb] font-normal">Shop</a></li>
+        <li><a href="#" class="block px-4 py-2 text-[#b0b3bb] font-normal">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="max-w-[1200px] mx-auto flex items-center justify-between gap-10 px-8 pt-8 pb-0 md:pt-16 md:gap-16 md:px-8 md:flex-row md:items-center md:justify-between md:max-w-[1200px] md:mx-auto md:mb-0 md:py-0 md:relative sm:flex-col-reverse sm:gap-6 sm:pt-6 sm:px-2">
+    <div class="flex-1">
+      <h1 class="noto-serif font-bold mb-6" style="font-size:65px;line-height:1.1;">
+        <span style="color:#000000;">ALWAYS </span><span style="color:#E95A08;">FRESH</span><br>
+        <span style="color:#E95A08;">FLOWERS</span>
+      </h1>
+      <p class="inter" style="font-size:22px;color:rgba(0,0,0,0.5);font-weight:400;max-width:600px;">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
+      </p>
+    </div>
+    <div class="flex-1 flex justify-end sm:justify-center">
+      <img src="assets/hero-flower.png" alt="Fresh Flowers" style="width:570px;height:355px;object-fit:cover;" class="">
+    </div>
+  </section>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html> 
