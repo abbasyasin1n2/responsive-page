@@ -15,9 +15,10 @@
 </head>
 <body class="bg-[#f7f8fa] text-[#222]">
   <header class="bg-[#f7f8fa]">
-    <nav class="max-w-[1200px] mx-auto flex items-center justify-between px-8 pt-8 pb-4">
+    <nav class="max-w-[1200px] mx-auto flex items-center justify-between px-4 pt-8 pb-4 md:px-8">
       <div class="flex items-center">
-        <img src="assets/logo.png" alt="Taugei Logo" class="h-16 w-auto select-none">
+        <img src="assets/logo.png" alt="Taugei Logo" class="h-12 w-auto select-none md:h-16">
+        <span class="ml-2 text-red-400 font-serif text-base md:text-lg">faugei</span>
       </div>
       <div class="flex items-center gap-2 md:gap-8">
         <ul class="hidden md:flex gap-8 font-medium text-lg items-center">
@@ -26,179 +27,171 @@
           <li><a href="#" class="font-normal text-[#8987A1] hover:text-[#E95A08] transition-colors">About us</a></li>
         </ul>
         <div class="flex items-center gap-2 ml-4">
-          <i class="fa-solid fa-cart-shopping text-xl hover:text-[#E95A08] transition-colors cursor-pointer"></i>
-          <span class="font-medium text-lg hover:text-[#E95A08] transition-colors cursor-pointer">Cart ($56)</span>
+          <i class="fa-solid fa-cart-shopping text-lg md:text-xl hover:text-[#E95A08] transition-colors cursor-pointer"></i>
+          <span class="font-medium text-base md:text-lg hover:text-[#E95A08] transition-colors cursor-pointer">Cart ($56)</span>
         </div>
       </div>
-      <button id="menu-btn" aria-label="Open menu" class="md:hidden flex flex-col justify-center items-center ml-4 w-8 h-8">
-        <span class="sr-only">Open menu</span>
-        <span class="block w-6 h-0.5 bg-[#e76f51] mb-1"></span>
-        <span class="block w-6 h-0.5 bg-[#e76f51] mb-1"></span>
-        <span class="block w-6 h-0.5 bg-[#e76f51]"></span>
-      </button>
-      <ul id="mobile-menu" class="absolute top-full right-4 bg-white rounded-lg shadow-md flex-col gap-0 font-medium text-base w-36 py-2 z-20 hidden md:hidden">
-        <li><a href="#" class="block px-4 py-2 font-bold text-[#222] hover:text-[#E95A08] transition-colors">Home</a></li>
-        <li><a href="#" class="block px-4 py-2 text-[#b0b3bb] font-normal hover:text-[#E95A08] transition-colors">Shop</a></li>
-        <li><a href="#" class="block px-4 py-2 text-[#b0b3bb] font-normal hover:text-[#E95A08] transition-colors">About us</a></li>
-      </ul>
     </nav>
   </header>
-  <section class="max-w-[1200px] mx-auto flex items-center justify-between gap-10 px-8 pt-8 pb-0 md:pt-16 md:gap-16 md:px-8 md:flex-row md:items-center md:justify-between md:max-w-[1200px] md:mx-auto md:mb-0 md:py-0 md:relative sm:flex-col-reverse sm:gap-6 sm:pt-6 sm:px-2">
-    <div class="flex-1">
-      <h1 class="noto-serif font-bold mb-6" style="font-size:65px;line-height:1.1;">
+
+  <!-- Banner Section -->
+  <section class="max-w-[1200px] mx-auto px-4 pt-8 pb-0 md:pt-16 md:gap-16 md:px-8 md:flex-row md:items-center md:justify-between md:max-w-[1200px] md:mx-auto md:mb-0 md:py-0 md:relative md:flex">
+    <div class="flex-1 order-2 md:order-1">
+      <h1 class="noto-serif font-bold mb-6 text-center md:text-left text-[45px] md:text-[65px]" style="line-height:1.1;">
         <span style="color:#000000;">ALWAYS </span><span style="color:#E95A08;">FRESH</span><br>
         <span style="color:#E95A08;">FLOWERS</span>
       </h1>
-      <p class="inter" style="font-size:22px;color:rgba(0,0,0,0.5);font-weight:400;max-width:600px;">
+      <p class="inter text-center md:text-left text-[18px] md:text-[22px]" style="color:rgba(0,0,0,0.5);font-weight:400;max-width:600px;">
         Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
       </p>
     </div>
-    <div class="flex-1 flex justify-end sm:justify-center">
-      <img src="assets/hero-flower.png" alt="Fresh Flowers" style="width:570px;height:355px;object-fit:cover;" class="">
+    <div class="flex-1 flex justify-center order-1 md:order-2 md:justify-end mb-6 md:mb-0">
+      <img src="assets/hero-flower.png" alt="Fresh Flowers" style="width:100%;max-width:570px;height:auto;object-fit:cover;" class="">
     </div>
   </section>
 
 <!-- Our Plants Section -->
-<section class="max-w-[1200px] mx-auto mt-16 px-8">
+<section class="max-w-[1200px] mx-auto mt-16 px-4 md:px-8">
   <div class="text-center mb-8">
-    <h2 class="noto-serif font-bold mb-2" style="font-size:50px;">
+    <h2 class="noto-serif font-bold mb-2 text-[36px] md:text-[50px]">
       <span style="color:#E95A08;">OUR </span><span style="color:#000000;">Plants</span>
     </h2>
-    <p class="inter mx-auto" style="font-size:22px;color:#898989;font-weight:400;max-width:900px;line-height:1.3;text-align:center;">
-  Indulge your senses with the beauty and fragrance of our fresh flower shop. From<br>
+    <p class="inter mx-auto text-[18px] md:text-[22px]" style="color:#898989;font-weight:400;max-width:900px;line-height:1.3;text-align:center;">
+  Indulge your senses with the beauty and fragrance of our fresh flower shop. From<br class="hidden md:block">
   classic roses to exotic blooms, we offer a wide variety of fresh.
 </p>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[30px] justify-center">
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-[30px] justify-center">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-      <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+      <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+      <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
         <div class="flex flex-col items-center w-full">
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-          <div style="height:20px;"></div>
-          <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+          <div class="h-[10px] md:h-[20px]"></div>
+          <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
         </div>
-        <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-          <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+        <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+          <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
         </button>
       </div>
     </div>
-    <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-        <div class="flex flex-col items-center w-full px-4 pt-6">
+    <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+        <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
           <div class="flex flex-col items-center w-full">
-            <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-            <div style="height:20px;"></div>
-            <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+            <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+            <div class="h-[10px] md:h-[20px]"></div>
+            <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
           </div>
-          <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-            <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+          <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+            <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
           </button>
         </div>
       </div>
-      <div style="width:270px;height:484.94px;" class="bg-white flex flex-col items-center p-0">
-        <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:270px;height:322.94px;object-fit:cover;" class="">
-        <div class="flex flex-col items-center w-full px-4 pt-6">
+      <div class="bg-white flex flex-col items-center p-0 w-full md:w-[270px] h-auto md:h-[484.94px] min-h-[400px]">
+        <img src="assets/sample-flower-image.png" alt="Lily Blossom" style="width:100%;height:auto;object-fit:cover;" class="">
+        <div class="flex flex-col items-center w-full px-2 md:px-4 pt-4 md:pt-6">
           <div class="flex flex-col items-center w-full">
-            <div class="inter font-medium" style="font-size:22px;color:#111111;">Lily Blossom</div>
-            <div style="height:20px;"></div>
-            <div class="inter font-medium" style="font-size:22px;color:#111111;">20 USD</div>
+            <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">Lily Blossom</div>
+            <div class="h-[10px] md:h-[20px]"></div>
+            <div class="inter font-medium text-center text-[16px] md:text-[22px]" style="color:#111111;">20 USD</div>
           </div>
-          <button style="width:270px;height:50px;background:#E95A08;border-radius:0;display:flex;align-items:center;justify-content:center;transition:background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-            <span class="inter font-semibold" style="font-size:16px;width:110px;height:12px;line-height:12px;text-align:center;color:#fff;">Add to cart</span>
+          <button class="w-full md:w-[270px] h-[40px] md:h-[50px] bg-[#E95A08] border-0 flex items-center justify-center transition-all duration-300 hover:bg-[#d14a00]" style="border-radius:0;">
+            <span class="inter font-semibold text-[14px] md:text-[16px] text-center text-white">Add to cart</span>
           </button>
         </div>
       </div>
   </div>
 </section>
+
 <!-- Flower & Plants Lover Section -->
-<section class="max-w-[1200px] mx-auto mt-48 px-8">
+<section class="max-w-[1200px] mx-auto mt-16 md:mt-48 px-4 md:px-8">
   <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-    <div class="relative flex-1">
-      <img src="assets/flower-store.png" alt="Flower Store" style="width:540px;height:597px;object-fit:cover;" class="">
+    <div class="relative flex-1 order-1 md:order-1">
+      <img src="assets/flower-store.png" alt="Flower Store" style="width:100%;height:auto;object-fit:cover;" class="md:w-[540px] md:h-[597px]">
       <img src="assets/trusted-badge.png" alt="Trusted Seller Badge" class="absolute -top-[143px] -right-[100px] hidden md:block" style="width:286px;height:286px;filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));z-index:10;">
     </div>
-    <div class="flex-1 relative z-20">
-      <h2 class="noto-serif font-bold text-[50px] text-[#000000] mb-6">
+    <div class="flex-1 relative z-20 order-2 md:order-2">
+      <h2 class="noto-serif font-bold text-center md:text-left text-[36px] md:text-[50px] text-[#000000] mb-6">
         Flower & Plants<br>Lover
       </h2>
       <ul class="space-y-4">
         <li class="flex items-start">
           <span class="text-black mr-3 mt-2 text-lg">•</span>
-          <p class="inter font-normal text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          <p class="inter font-normal text-[18px] md:text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </li>
         <li class="flex items-start">
           <span class="text-black mr-3 mt-2 text-lg">•</span>
-          <p class="inter font-normal text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          <p class="inter font-normal text-[18px] md:text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </li>
         <li class="flex items-start">
           <span class="text-black mr-3 mt-2 text-lg">•</span>
-          <p class="inter font-normal text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          <p class="inter font-normal text-[18px] md:text-[22px] text-[#000000] opacity-50">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </li>
       </ul>
     </div>
@@ -206,44 +199,44 @@
 </section>
 
 <!-- Latest Deals Section -->
-<section class="max-w-[1200px] mx-auto mt-32 px-8">
-  <div class="text-center mb-12">
+<section class="max-w-[1200px] mx-auto mt-16 md:mt-32 px-4 md:px-8">
+  <div class="text-center mb-8 md:mb-12">
     <h2 class="mb-4">
-      <span class="noto-serif font-bold text-[50px] text-[#E95A08]">Latest </span> 
-      <span class="noto-serif font-bold text-[50px] text-[#000000]">Deals</span>
+      <span class="noto-serif font-bold text-[36px] md:text-[50px] text-[#E95A08]">Latest </span> 
+      <span class="noto-serif font-bold text-[36px] md:text-[50px] text-[#000000]">Deals</span>
     </h2>
-    <p class="inter font-normal text-[22px] text-[#000000] opacity-50 max-w-2xl mx-auto">
+    <p class="inter font-normal text-[18px] md:text-[22px] text-[#000000] opacity-50 max-w-2xl mx-auto">
       Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
     </p>
   </div>
   
-  <div class="flex flex-col md:flex-row justify-between gap-[25px]">
-    <div class="space-y-[25px] flex flex-col items-center">
-      <div class="relative bg-cover bg-center rounded-lg overflow-hidden" style="background-image: url('assets/deal-bloom.png'); width: 366.7px; height: 206px;">
+  <div class="flex flex-col md:flex-row justify-between gap-4 md:gap-[25px]">
+    <div class="space-y-4 md:space-y-[25px] flex flex-col items-center">
+      <div class="relative bg-cover bg-center rounded-lg overflow-hidden w-full md:w-[366.7px] h-[150px] md:h-[206px]" style="background-image: url('assets/deal-bloom.png');">
         <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white">
-          <h3 class="noto-serif font-bold text-[20px] text-[#ffffff] mb-4">60% Off | Bloom Plant</h3>
+          <h3 class="noto-serif font-bold text-[16px] md:text-[20px] text-[#ffffff] mb-2 md:mb-4">60% Off | Bloom Plant</h3>
           <button class="text-white underline decoration-white underline-offset-4 hover:no-underline transition-all duration-300">
-            <span class="inter font-semibold text-[16px]">Shop Now</span>
+            <span class="inter font-semibold text-[14px] md:text-[16px]">Shop Now</span>
           </button>
         </div>
       </div>
       
-      <div class="relative bg-cover bg-center rounded-lg overflow-hidden" style="background-image: url('assets/deal-ana.png'); width: 367px; height: 197px;">
+      <div class="relative bg-cover bg-center rounded-lg overflow-hidden w-full md:w-[367px] h-[140px] md:h-[197px]" style="background-image: url('assets/deal-ana.png');">
         <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white">
-          <h3 class="noto-serif font-bold text-[20px] text-[#ffffff] mb-4">30% Off | Ana Plant</h3>
+          <h3 class="noto-serif font-bold text-[16px] md:text-[20px] text-[#ffffff] mb-2 md:mb-4">30% Off | Ana Plant</h3>
           <button class="text-white underline decoration-white underline-offset-4 hover:no-underline transition-all duration-300">
-            <span class="inter font-semibold text-[16px]">Shop Now</span>
+            <span class="inter font-semibold text-[14px] md:text-[16px]">Shop Now</span>
           </button>
         </div>
       </div>
     </div>
     
     <div class="flex justify-center">
-      <div class="relative bg-cover bg-center rounded-lg overflow-hidden" style="background-image: url('assets/deal-zabo.png'); width: 753px; height: 423.13px;">
+      <div class="relative bg-cover bg-center rounded-lg overflow-hidden w-full md:w-[753px] h-[200px] md:h-[423.13px]" style="background-image: url('assets/deal-zabo.png');">
         <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white">
-          <h3 class="noto-serif font-bold text-[40px] text-[#ffffff] mb-4">25% Off | Zabo Plant</h3>
+          <h3 class="noto-serif font-bold text-[24px] md:text-[40px] text-[#ffffff] mb-2 md:mb-4">25% Off | Zabo Plant</h3>
           <button class="text-white underline decoration-white underline-offset-4 hover:no-underline transition-all duration-300">
-            <span class="inter font-semibold text-[28px]">Shop Now</span>
+            <span class="inter font-semibold text-[18px] md:text-[28px]">Shop Now</span>
           </button>
         </div>
       </div>
@@ -252,76 +245,69 @@
 </section>
 
 <!-- Join Section -->
-<section class="relative bg-cover bg-center py-20 mt-32 w-full flex items-center justify-center" style="background-image: url('assets/news-letter-bg.png'); min-height: 533px;">
-  <div class="text-center">
-    <h2 class="noto-serif font-bold text-[50px] text-white mb-8">Join the colorful Bunch</h2>
-    <div class="flex flex-col md:flex-row items-center justify-center">
-      <input type="email" placeholder="Write email" class="px-4 py-3 text-lg border-0 rounded-none focus:outline-none focus:ring-0" style="width: 644px; height: 50px;">
-      <button class="text-white px-8 py-3 text-lg font-semibold" style="width: 186px; height: 50px; background: #E95A08; transition: background-color 0.3s ease;" onmouseover="this.style.background='#d14a00'" onmouseout="this.style.background='#E95A08'">
-        <span class="inter font-semibold text-[16px]">Subscribe</span>
+<section class="relative bg-cover bg-center py-12 md:py-20 mt-16 md:mt-32 w-full flex items-center justify-center" style="background-image: url('assets/news-letter-bg.png'); min-height: 400px;">
+  <div class="text-center px-4 md:px-0">
+    <h2 class="noto-serif font-bold text-[36px] md:text-[50px] text-white mb-6 md:mb-8">Join the colorful Bunch</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+      <input type="email" placeholder="Write email" class="px-4 py-3 text-base md:text-lg border-0 rounded-none focus:outline-none focus:ring-0 w-full md:w-[644px] h-[50px]">
+      <button class="text-white px-8 py-3 text-base md:text-lg font-semibold w-full md:w-[186px] h-[50px] bg-[#E95A08] transition-all duration-300 hover:bg-[#d14a00]">
+        <span class="inter font-semibold text-[14px] md:text-[16px]">Subscribe</span>
       </button>
     </div>
   </div>
 </section>
 
 <!-- Footer Section -->
-<footer class="bg-white py-12">
-  <div class="max-w-[1200px] mx-auto px-8">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<footer class="bg-white py-8 md:py-12">
+  <div class="max-w-[1200px] mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
       <!-- Left Section - Company Info -->
-      <div class="space-y-4">
+      <div class="space-y-4 text-center md:text-left">
         <div>
-          <img src="assets/logo.png" alt="Flower Shop Logo" style="width: 135px; height: 82px;">
+          <img src="assets/logo.png" alt="Flower Shop Logo" class="w-[100px] h-auto md:w-[135px] md:h-[82px]">
         </div>
-        <p class="inter font-normal text-[22px] text-[#000000] opacity-50 leading-relaxed">
+        <p class="inter font-normal text-[16px] md:text-[22px] text-[#000000] opacity-50 leading-relaxed">
           Indulge your senses with the beauty and fragrance of our fresh flower shop.
         </p>
       </div>
 
       <!-- Middle Section - Navigation Links -->
-      <div class="grid grid-cols-2 gap-8">
-        <div class="space-y-3">
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Home</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">About Us</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Blog</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">FAQ</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Contact Us</a>
+      <div class="grid grid-cols-2 gap-4 md:gap-8 text-center md:text-left">
+        <div class="space-y-2 md:space-y-3">
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Home</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">About Us</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Blog</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">FAQ</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Contact Us</a>
         </div>
-        <div class="space-y-3">
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Features</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Pricing</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Privacy Policy</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Terms of Service</a>
-          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors">Help Center</a>
+        <div class="space-y-2 md:space-y-3">
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Features</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Pricing</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Privacy Policy</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Terms of Service</a>
+          <a href="#" class="block text-gray-700 hover:text-[#E95A08] transition-colors text-sm md:text-base">Help Center</a>
         </div>
       </div>
 
       <!-- Right Section - Social Media Icons -->
-      <div class="flex justify-end">
+      <div class="flex justify-center md:justify-end">
         <div class="flex space-x-4">
           <a href="#" class="hover:opacity-80 transition-opacity">
-            <img src="assets/icon-linkedin.png" alt="LinkedIn" class="h-6 w-6">
+            <img src="assets/icon-linkedin.png" alt="LinkedIn" class="h-5 w-5 md:h-6 md:w-6">
           </a>
           <a href="#" class="hover:opacity-80 transition-opacity">
-            <img src="assets/icon-twitter.png" alt="Twitter" class="h-6 w-6">
+            <img src="assets/icon-twitter.png" alt="Twitter" class="h-5 w-5 md:h-6 md:w-6">
           </a>
           <a href="#" class="hover:opacity-80 transition-opacity">
-            <img src="assets/icon-facebook.png" alt="Facebook" class="h-6 w-6">
+            <img src="assets/icon-facebook.png" alt="Facebook" class="h-5 w-5 md:h-6 md:w-6">
           </a>
           <a href="#" class="hover:opacity-80 transition-opacity">
-            <img src="assets/icon-youtube.png" alt="YouTube" class="h-6 w-6">
+            <img src="assets/icon-youtube.png" alt="YouTube" class="h-5 w-5 md:h-6 md:w-6">
           </a>
         </div>
       </div>
     </div>
   </div>
 </footer>
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 </body>
 </html> 
